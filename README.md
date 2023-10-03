@@ -53,10 +53,21 @@
 1. 工具> 偏好设置 > 左下角的显示设置 >全部> 界面>主界面>右侧勾选web
 2. 接上一步 主界面的展开项 >Lua>LuaHttp>密码>输入密码并记住
 3. 保存并重启vlc 
-4. 打开项目中的`backend\config\vlcConfig.js`,将密码改为,在第2步设置的密码
-5. 进入项目`根目录`,`backend` ,`backend\NeteaseCloudMusicApi`,`frontend`目录下分别各执行一次 `npm install`
-6. 打开`frontend\src\plugins\websocket.js`,将`ws://192.168.1.108:3000`改为`ws://<电脑的IP地址>:3000`
-7. 打开`frontend\vue.config.js`,将`target: 'http://192.168.1.108:3000',`改为`target: 'http://<电脑的IP地址>:3000'`
+
+下载项目
+
+```shell
+git clone https://github.com/william-wwh/DormJukebox.git
+cd DormJukebox
+git submodule update --init
+```
+
+初始化及配置项目
+
+1. 打开项目中的`backend\config\vlcConfig.js`,将密码改为,在第2步设置的密码
+2. 进入项目`根目录`,`backend` ,`backend\NeteaseCloudMusicApi`,`frontend`目录下分别各执行一次 `npm install`
+3. 打开`frontend\src\plugins\websocket.js`,将`ws://192.168.1.108:3000`改为`ws://<电脑的IP地址>:3000`
+4. 打开`frontend\vue.config.js`,将`target: 'http://192.168.1.108:3000',`改为`target: 'http://<电脑的IP地址>:3000'`
 
 ### 4.运行项目
 
