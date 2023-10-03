@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"cd backend && node app.js\" \"cd frontend && npm run serve\""
+  },
+  "dependencies": {
+    "vue3-lazyload": "^0.3.8"
+  }
+}
