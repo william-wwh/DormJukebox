@@ -95,5 +95,3 @@ git submodule update --init
 ###### 7.后话
 
 这是学习后的一个练手项目 基于一个突发奇想 有空会慢慢完善 
-
-git filter-branch --force --index-filter  'git rm --cached --ignore-unmatch -r node_modules'  --prune-empty --tag-name-filter cat -- --all
